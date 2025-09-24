@@ -1,0 +1,236 @@
+
+
+
+/* ===== Styles généraux ===== */
+body {
+    font-family: Verdana, Gothic sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Titres */
+.label, .labee {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    color: #ff6600;
+    margin: 20px auto;
+}
+
+.domestique, .titre3, .god {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-style: oblique;
+    color: #ff6600;
+    margin: 20px auto;
+}
+
+/* Paragraphes */
+.pa, .pdo, .pm, .panneau {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 18px;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header & nav */
+header {
+    background-color: #1a2a40;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 15px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* Listes */
+ul li {
+    list-style-type: disc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Boutons */
+button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+   *
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Formulaire */
+form {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form legend {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+form input, form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Galeries */
+.anja, .iann {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    gap: 15px;
+}
+
+.anja img, .iann img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer & contacts */
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 1rem;
+    color: black;
+}
+
+.telephone, .footer-links, .social-icons {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+a{
+     text-decoration: none;
+     list-style: none;
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 1024px) {
+    .pa, .pdo, .pm, .panneau {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .domestique, .titre3, .god {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3, h4 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .pa, .pdo, .pm, .panneau {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    ul li {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    footer, .telephone {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    button {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .pa, .pdo, .pm, .panneau, form {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.2rem;
+    }
+
+    .domestique, .titre3, .god {
+        font-size: 20px;
+    }
+
+    .anja img, .iann img {
+        max-width: 100%;
+    }
+}
